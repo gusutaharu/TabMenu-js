@@ -1,0 +1,44 @@
+
+.tabmenu {
+  width: 600px;
+  margin: 0 auto;
+  padding-top: 32px;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  padding: 4px  8px;
+  border-radius: 5px 5px 0 0;
+  cursor: pointer;
+}
+
+li:hover {
+  opacity: 0.6;
+}
+
+li.active {
+  background: #2D2D2D;
+  color: white;
+  opacity: 1;
+}
+
+.container {
+  background: #2D2D2D;
+  color: white;
+  padding: 16px;
+  height: 160px;
+}
+
+section {
+  display: none;
+}
+
+section.active {
+  display: block;
+}
