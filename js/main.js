@@ -5,14 +5,11 @@
   const sections = document.querySelectorAll('section');
 
   lis.forEach((li, index) => {
-    li.addEventListener('click', ()=>{
-      li.classList.toggle('active')
-
-      lis.forEach(el => {
-        if (li !==el){
-          el.classList.remove('active');
-        }
+    li.addEventListener('click', () =>{
+      lis.forEach(el =>{
+        el.classList.remove('active');
       });
+      li.classList.add('active');
       sections.forEach(sEl =>{
         sEl.classList.remove('active');
       });
